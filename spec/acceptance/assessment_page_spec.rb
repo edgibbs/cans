@@ -6,6 +6,6 @@ require 'feature'
 feature 'Assessment Page' do
   scenario 'has default rails welcome' do
     visit '/'
-    expect(page).to have_content('Yay!')
+    expect(page).to have_content('Hello')
   end
 end
