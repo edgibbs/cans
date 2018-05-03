@@ -8,4 +8,4 @@ services:
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
     environment:
-      POSTGRES_PASSWORD: example
+      POSTGRES_PASSWORD: ${CANS_DB_PASSWORD}

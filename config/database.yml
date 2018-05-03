@@ -5,7 +5,7 @@ development:
   database: cans
   pool: 5
   username: postgres
-  password: example
+  password: <%= ENV.fetch('CANS_DB_PASSWORD', 'example') %>
 
 test:
   adapter: postgresql
@@ -14,4 +14,4 @@ test:
   database: cans_test
   pool: 5
   username: postgres
-  password: example
+  password: <%= ENV.fetch('CANS_DB_PASSWORD', 'example') %>
